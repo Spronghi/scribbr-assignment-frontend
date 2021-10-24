@@ -9,12 +9,25 @@ It contains three main views:
 The web app is very simple, I tried to make it as modular as possible and I didn't used a Vue.js UX library, so you can determinate my skill set.
 I didn't implemented a test suite for it, I am sorry but please consider that I worked on this web app almost 4 hours.
 
+## Deployed on Heroku
+The server is deployed on Heroku at the URL `https://scribbr-assignment-f.herokuapp.com/`. Please consider that is a free subscription so it stays alive only if a request is done every 20/30 seconds, and then, after a request arrives it take some seconds to wake up!
+
 ## Project setup NPM
 You can run the application using NPM
 
 ```
 npm install
 npm run serve
+```
+
+The app will be available at `http://localhost:8080/` and expect the server to be listening on `http://localhost:3000/`
+
+## Project setup Docker
+You can run the application using Docker:
+
+```
+docker-compose build
+docker-compose up
 ```
 
 The app will be available at `http://localhost:8080/` and expect the server to be listening on `http://localhost:3000/`
